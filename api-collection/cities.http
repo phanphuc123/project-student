@@ -1,0 +1,47 @@
+@baseUrl = http://localhost:3000/api
+@resourceName = students
+# Categories
+
+# @name getAllProduct
+
+GET {{baseUrl}}/{{resourceName}}
+
+###
+# @name filterProducts
+///GET {{baseUrl}}/{{resourceName}}?name=teal&_gte=700
+###
+
+# @name pagination
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=3
+###
+
+
+# @name sort
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=5_sort=price&_order=asc
+
+
+###
+
+# @name addNewProduct
+
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+{
+
+}
+
+###
+
+# @name updateProduct
+
+PATCH {{baseUrl}}/{{resourceName}}/-R-Rtan
+Content-Type: application/json
+
+{
+
+}
+###
+
+# @name removeProduct
+
+DELETE {{baseUrl}}/{{resourceName}}
